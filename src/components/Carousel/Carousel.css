@@ -20,6 +20,7 @@
  object-fit: contain;
  width: 100%;
 transition: var(--transition);
+overflow: hidden;
 }
 /* .carousel-container .img-container{
     position: absolute;
