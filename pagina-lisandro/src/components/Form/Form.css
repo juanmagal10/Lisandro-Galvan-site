@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blanco: #f4f7ed;
+    --verde-claro: #86ee60;
+    --verde-oscuro: #2e6e65;
+    --azul: #2b3752;
+
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 700px;
+    width: 95%;
+    margin: 40px 0 15px 20px;
+    border: 1px solid #222;
+    box-shadow: 8px 10px 10px 8px #cecece;
+}
+
+.form-card{
+    height: 80%;
+    /* border: 1px solid #222; */
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.form-card .form-title-container{
+    border: none;
+
+}
+
+.form-card .form-title-container .form-title{
+    color: var(--verde-oscuro);
+    font-size: 25px;
+    margin:10px 0
+
+}
+
+.form-card .form-card-img{
+height: 50%;
+width: 80%;
+object-fit: cover;
+margin-bottom: 10px;
+}
+.form-card p{
+ margin: 5px;
+}
+
+.form-card .icons-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-content:flex-end ;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.form-card .icon-container{
+width: 50%;
+}
+
+.form-card .icon-container :first-child{
+    height: 30px;
+    width: 30px;
+    color: var(--verde-claro);
+}
+
+
+
+.form-container .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+    /* border: .5px solid var(--azul); */
+    margin: 10px;
+    border-radius: 5px;
+    
+
+}
+
+.form-container .form form-control .form-input{
+    width: 80%;
+    height: 25px;
+    background-color: var(--blanco);
+    color: var(--azul);
+    border: .5px solid var(--azul);
+    border-radius: 3px;
+    padding-left: 7px;
+}
+
+form-container .form form-control .form-input:target{
+    border: .5px solid var(--verde-claro);
+}
+
+.form-container .form .form-text-area{
+    width: 80%;
+    background-color: var(--blanco);
+    color: var(--azul);
+    border: .5px solid var(--azul);
+    border-radius: 3px;
+    padding-left: 7px;
+    }
+
+.form-container .form button{
+    width: 40%;
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    margin: 0 auto;
+}
+
