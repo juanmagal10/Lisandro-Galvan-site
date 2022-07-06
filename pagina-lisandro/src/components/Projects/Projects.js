@@ -11,12 +11,13 @@ const Projects = () => {
       <div className='grid-container'>
           <div className='projects-container'>
               <div className="project-card">
-                  <h3 className='project-title'>Titulo</h3>
+                  <h3 className='project-title' id='project-title'>Titulo</h3>
+                  
                   <img className='project-img' src={refugio} alt="refugio" />
                   <p className='project-description'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi enim at autem, beatae doloremque necessitatibus delectus eos voluptate sapiente voluptatibus repellat quas possimus similique quis magni incidunt et sed modi?</p>
               </div>
               <div className="project-card">
-                  <h3 className='project-title'>Titulo</h3>
+                  <h3 className='project-title' id='project-title2'>Titulo</h3>
                   <img className='project-img' src={reciclaje} alt="reciclaje" />
                   <p className='project-description'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi enim at autem, beatae doloremque necessitatibus delectus eos voluptate sapiente voluptatibus repellat quas possimus similique quis magni incidunt et sed modi?</p>
               </div>

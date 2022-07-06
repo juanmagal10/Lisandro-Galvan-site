@@ -46,6 +46,7 @@
 color: var(--verde-oscuro);
 font-size: 30px;
 margin: 5px;
+ border-bottom: 2px solid var(--verde-claro);
 }
 
 .project-card .project-img{

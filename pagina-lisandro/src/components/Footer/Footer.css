@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blanco: #f4f7ed;
+    --verde-claro: #86ee60;
+    --verde-oscuro: #2e6e65;
+    --azul: #2b3752;
+
+}
+
+.footer-container{
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+    height: 90px;
+}

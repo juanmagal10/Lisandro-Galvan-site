@@ -24,6 +24,7 @@
     color: var(--verde-oscuro);
     margin-top: 30px;
     font-size: 30px;
+    border-bottom: 2px solid var(--verde-claro);
 }
 
 .description .p-grid{

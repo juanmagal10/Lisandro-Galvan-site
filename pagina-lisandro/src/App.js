@@ -5,6 +5,8 @@ import Carousel from './components/Carousel/Carousel';
 import Description from './components/Description/Description';
 import Projects from './components/Projects/Projects';
 import Form from './components/Form/Form';
+import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Description />
       <Projects />
       <Form />
+      <Footer/>
     </div>
   );
 }
