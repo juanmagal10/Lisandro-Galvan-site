@@ -1,0 +1,47 @@
+:root {
+    --blanco: #f4f7ed;
+    --verde-claro: #86ee60;
+    --verde-oscuro: #2e6e65;
+    --azul: #2b3752;
+
+}
+
+.carousel-container {
+   .swiper-slide{
+    position: relative;
+    
+     img{
+        top: 0;
+        left: 0;
+        height: 84vh;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+     }
+ 
+   }
+   .swiper-button-prev{
+    color:var(--blanco);
+   }
+   .swiper-button-prev:hover{
+    color:var(--verde-claro);
+   }
+   .swiper-button-next{
+    color:var(--blanco);
+   }
+   .swiper-button-next:hover{
+    color:var(--verde-claro);
+   }
+   .swiper-pagination-bullet-active{
+    background-color: var(--blanco);
+    color: var(--blanco);
+   }
+}
+
+// .carousel-container .carousel-img {
+//     height: 84vh;
+//     width: 100%;
+//     object-fit: cover;
+//     position: absolute;
+//     /* animation: slide 3s; */
+// }

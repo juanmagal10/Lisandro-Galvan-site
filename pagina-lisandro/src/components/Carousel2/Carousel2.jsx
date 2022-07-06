@@ -7,10 +7,10 @@ import img3 from '../../assets/img/img3.jpg'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import './Carousel.css'
+import "swiper/scss";
+import "swiper/scss/pagination";
+import "swiper/scss/navigation";
+import './Carousel2.scss'
 
 
 
@@ -36,7 +36,7 @@ const Carousel2 = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="carousel-container"
       >
-                  <SwiperSlide ><img /*className='carousel-img'*/ src={img1} alt="img1" /></SwiperSlide>
+                  <SwiperSlide className='slide'><img className='slide-content' src={img1} alt="img1" /></SwiperSlide>
             
                   <SwiperSlide ><img /*className='carousel-img'*/ src={img2} alt="img2" /></SwiperSlide>
 
