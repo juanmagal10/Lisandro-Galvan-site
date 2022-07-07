@@ -22,15 +22,19 @@
    }
    .swiper-button-prev{
     color:var(--blanco);
+    opacity: .6;
    }
    .swiper-button-prev:hover{
     color:var(--verde-claro);
    }
    .swiper-button-next{
     color:var(--blanco);
+    opacity: .6;
    }
    .swiper-button-next:hover{
     color:var(--verde-claro);
+
+    
    }
    .swiper-pagination-bullet-active{
     background-color: var(--blanco);

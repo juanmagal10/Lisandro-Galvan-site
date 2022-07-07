@@ -19,14 +19,12 @@
     margin: 40px 0 15px 20px;
     border: 1px solid #222;
     box-shadow: 8px 10px 10px 8px #cecece;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .form-card{
     height: 80%;
-    /* border: 1px solid #222; */
     margin: 10px;
-    border-radius: 5px;
 }
 
 .form-card .form-title-container{
@@ -41,34 +39,43 @@
 }
 
 .form-card .form-card-img{
-height: 50%;
-width: 80%;
+height: 300px;
+width: 300px;
 object-fit: cover;
 margin-bottom: 10px;
-border-radius: 5px;
+border-radius: 50%;
+box-shadow: 1px 2px 4px 5px #cecece;
 }
 
 
 .form-card p{
- margin: 5px;
+ margin-bottom: 40px;
  color: var(--azul);
+ font-size: 18px;
 }
+
 .form-card .icons-container{
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
     flex-wrap: wrap;
     width: 70%;
     margin:15px auto 0 auto ;
 }
+
 .form-card .icon-container{
 width: 50%;
 }
 
+
 .form-card .icon-container :first-child{
-    height: 50px;
+    height: 60px;
     margin: 10px;
-    width: 50px;
+    width: 60px;
+    color: var(--verde-oscuro);
+    cursor: pointer;
+}
+
+.form-card .icon-container :first-child:hover{
     color: var(--verde-claro);
 }
 
@@ -78,9 +85,8 @@ width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 80%;
-    margin: 10px;
-    border-radius: 5px;
+    height: 75%;
+    margin-top: 100px;
     
 
 }
@@ -91,8 +97,9 @@ width: 50%;
     background-color: var(--blanco);
     color: var(--azul);
     border: .5px solid var(--azul);
-    border-radius: 3px;
+    border-radius: 6px;
     padding-left: 7px;
+    margin: 15px auto;
 }
 
 .form-container .form form-control .form-input:focus{
@@ -106,8 +113,9 @@ width: 50%;
     background-color: var(--blanco);
     color: var(--azul);
     border: .5px solid var(--azul);
-    border-radius: 3px;
+    border-radius: 6px;
     padding-left: 7px;
+    margin: 15px auto;
     }
 
 
@@ -118,13 +126,112 @@ width: 50%;
 
 
 .form-container .form button{
-    width: 18%;
-    height: 8%;
+    width: 20%;
+    height:120px;
+    text-align: center;
     background-color: var(--verde-oscuro);
     color: var(--blanco);
-    margin: 0 auto;
-    border-radius: 5px;
-    box-shadow: 8px 10px 10px 8px #cecece;;
-    font-size: 25px;
+    margin: 40px auto 10px auto;
+    border-radius: 6px;
+    box-shadow: 8px 10px 10px 8px #cecece;
+    font-size: 28px;
+    cursor: pointer;
 }
 
+.form-container .form button:hover{
+    background-color: var(--verde-claro);
+    opacity: .5;
+    color:#111;
+}
+
+
+@media screen and (max-width: 1150px){
+    .form-container .form-card .form-card-img{
+        height: 280px;
+        width: 280px;
+    }
+    .form-container .form button{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .form-container .form-card .form-card-img {
+            height: 250px;
+            width: 250px;
+        }
+        /* .form-card .icon-container :first-child {
+            height: 50px;
+            width: 50px;
+        } */
+    
+        .form-container .form button {
+            font-size: 23px;
+        }
+}
+@media screen and (max-width: 800px){
+    /* .form-container .form-card .form-card-img {
+            height: 230px;
+            width: 230px;
+        }
+        .form-container .form button {
+            font-size: 20px;
+        } */
+
+        .form-container{
+            width: 92%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 4px 6px 3px #cecece;
+            margin: 40px 0 15px 15px;
+        }
+        .form-container .form-card{
+            height: 50%;
+        }
+        .form-container .form-card .form-card-img {
+            height: 140px;
+            width: 140px;
+        }
+        .form-card .icons-container{
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+        .form-card .icons-container .icon-container{
+            width: 30%;
+        }
+      
+        .form-card .icons-container .icon-container :first-child {
+            height: 35px;
+            width: 35px;
+          
+        }
+
+        .form-container .form{
+            margin-top: 15px;
+            height: 50%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .form-container .form form-control{
+            width: 50%;
+            margin: 0;
+        }
+        .form-container .form form-control .form-input{
+            width: 87%;
+            height: 30px;
+            margin: 0;
+      
+        } 
+
+        .form-container .form form-control .form-text-area{
+            width: 87%;
+            margin: 0;
+        } 
+
+        .form-container .form button{
+            width: 50%;
+            height: 40px;
+            margin: 0;
+            box-shadow: 2px 4px 6px 3px #cecece;
+        }
+
+}

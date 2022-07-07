@@ -42,7 +42,7 @@ const Form = () => {
               </form-control>
               <form-control>
                   <label htmlFor="message" />
-                  <textarea id='message' name='message' rows={10} placeholder='mensaje' className='form-text-area'/>
+                  <textarea id='message' name='message' rows={window.innerWidth<800?4:10} placeholder='mensaje' className='form-text-area'/>
               </form-control>
               <button type='submit'>enviar</button>
           </form>

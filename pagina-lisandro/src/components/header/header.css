@@ -29,8 +29,8 @@
 
 
 .logo{
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
     cursor: pointer;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .titulo-container .titulo{
-    font-size: 60px;
+    font-size: 55px;
     font-weight: bold;
     color:var(--verde-oscuro);
 }
@@ -50,9 +50,9 @@
     display: none;
 }
 .titulo-container .subtitulo{
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
-    color: var(--verde-claro)
+    color: var(--azul)
 }
 
 .titulo-container:hover{
@@ -173,10 +173,7 @@
             margin-left: auto;
         }
 }
-@media screen and (max-width: 1250px) {
-    .titulo-container {
-        margin-left: auto;
-    }
+@media screen and (max-width: 1150px) {
     .titulo-container .titulo {
         font-size: 40px;
     }
@@ -233,19 +230,27 @@
     }
 }
 @media screen and (max-width: 450px){
-    .logo{
-        width: 90px;
-        height:90px;
+    .header{
+        padding-right: 6px;
     }
+    .logo{
+        width: 74px;
+        height:74px;
+        margin-bottom: 10px;
+    }
+        .titulo-container{
+            margin:5px 0 5px auto;
+        }
         .titulo-container .titulo {
-        font-size: 35px;
+        font-size: 27px;
     }
     .titulo-container .subtitulo {
-        font-size: 20px;
+        font-size: 15px;
     }
     .menu-logo-container{
-        height: 40px;
-        width: 40px;
+        height: 45px;
+        width: 45px;
+
     }
     .aside-nav-container .aside-nav ul li{
         font-size: 18px;

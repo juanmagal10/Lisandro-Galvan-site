@@ -61,6 +61,7 @@ margin: 5px;
 .project-card .project-description{
     color: var(--azul);
     width: 80%;
+    margin: 15px auto;
 }
 @media screen and (max-width: 875px) {
     .projects-container {
@@ -71,12 +72,19 @@ margin: 5px;
         grid-column: 1/3;
     }
 }
+@media screen and (max-width: 800px){
+    .project-card {
+        box-shadow: 2px 4px 6px 3px #cecece;
+    }
+}
 
 
 @media screen and (max-width: 477px) {
     .projects-container{
         display: grid;
         grid-template-columns: auto;
+       
 
     }
+   
 }
