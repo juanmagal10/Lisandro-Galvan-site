@@ -13,7 +13,8 @@
 .grid-container{
     display: flex;
     justify-content: center;
-    background-color: var(--blanco);
+    /* background-color: #f6fdfd; */
+    background-color: transparent;
     margin-top: 20px;
 }
 .grid-container .projects-container{
@@ -22,7 +23,7 @@
     /* grid-auto-flow: dense; */
     grid-auto-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(40%, 48%));
-    background-color: var(--blanco);
+    background-color: transparent;
     width: 95%;
     
 }
@@ -43,16 +44,17 @@
 
 }
 .project-title{
-color: var(--verde-oscuro);
-font-size: 30px;
-margin: 5px;
- border-bottom: 2px solid var(--verde-claro);
+    color: var(--verde-oscuro);
+    font-size: 30px;
+    margin: 5px;
+    border-bottom: 2px solid var(--verde-claro);
+    text-shadow: 2px 4px 6px #d3d3d3;
 }
 
 .project-card .project-img{
     width: 80%;
     height: 325px;
-    border-radius: 2px;
+    border-radius: 4px;
     box-shadow: 3px 3px 5px var(--azul);
     margin: 5px;
     object-fit: cover;

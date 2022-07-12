@@ -16,7 +16,8 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 2px;
-    background-image: linear-gradient(#ffffff, #fbfbfb, #efefef,#dcdcdc);
+    /* background-image: linear-gradient(#ffffff, #fbfbfb, #efefef,#dcdcdc); */
+    background-color: transparent;
     height: fit-content;
     position: relative;
 }
@@ -45,6 +46,7 @@
     font-size: 55px;
     font-weight: bold;
     color:var(--verde-oscuro);
+    text-shadow: 2px 4px 6px #cecece;
 }
 .titulo-container .titulo br{
     display: none;
@@ -52,7 +54,8 @@
 .titulo-container .subtitulo{
     font-size: 26px;
     font-weight: bold;
-    color: var(--azul)
+    color: var(--azul);
+    text-shadow: 2px 4px 6px #dedede;
 }
 
 .titulo-container:hover{
@@ -92,7 +95,8 @@
     font-weight: bold;
     margin: 0 16px 15px 6px;
     position: relative;
-    color: var(--verde-oscuro)
+    color: var(--verde-oscuro);
+    text-shadow: 2px 4px 6px #e3e3e3;
 }
 .nav-container .nav ul li:hover{
     color: var(--azul);
@@ -173,7 +177,7 @@
             margin-left: auto;
         }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 11px) {
     .titulo-container .titulo {
         font-size: 40px;
     }
@@ -236,16 +240,18 @@
     .logo{
         width: 74px;
         height:74px;
-        margin-bottom: 10px;
     }
         .titulo-container{
             margin:5px 0 5px auto;
+            
         }
         .titulo-container .titulo {
-        font-size: 27px;
+        font-size: 25px;
+        line-height: 34px;
     }
     .titulo-container .subtitulo {
-        font-size: 15px;
+        font-size: 13px;
+        line-height: 25px;
     }
     .menu-logo-container{
         height: 45px;

@@ -7,8 +7,13 @@
 }
 
 .carousel-container {
+  
+  
    .swiper-slide{
     position: relative;
+
+
+
     
      img{
         top: 0;
@@ -17,7 +22,10 @@
         width: 100%;
         object-fit: cover;
         position: absolute;
+        
      }
+
+   
  
    }
    .swiper-button-prev{
@@ -30,9 +38,11 @@
    .swiper-button-next{
     color:var(--blanco);
     opacity: .6;
+    font-size: 3px;
    }
    .swiper-button-next:hover{
     color:var(--verde-claro);
+    
 
     
    }
@@ -40,12 +50,27 @@
     background-color: var(--blanco);
     color: var(--blanco);
    }
+   .slider-text {
+      font-size: 20px;
+      color: #eee;
+      position: relative;
+      z-index: 5000;
+      top: 80%;
+      left: -100%;
+   }
+   .animation{
+      animation: aparecer .8s
+   };
+   @keyframes aparecer {
+      0%{
+         left: -100%;
+      }
+      100%{
+         left: 0;
+      }
+   }
+
 }
 
-// .carousel-container .carousel-img {
-//     height: 84vh;
-//     width: 100%;
-//     object-fit: cover;
-//     position: absolute;
-//     /* animation: slide 3s; */
-// }
+
+

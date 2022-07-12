@@ -34,7 +34,8 @@
 .form-card .form-title-container .form-title{
     color: var(--verde-oscuro);
     font-size: 35px;
-    margin:10px 0
+    margin:10px 0;
+    text-shadow: 2px 4px 6px #d8d8d8;
 
 }
 
@@ -94,9 +95,9 @@ width: 50%;
 .form-container .form form-control .form-input{
     width: 80%;
     height: 25px;
-    background-color: var(--blanco);
+    background-color: #f2f8f8;
     color: var(--azul);
-    border: .5px solid var(--azul);
+    border: .3px solid var(--azul);
     border-radius: 6px;
     padding-left: 7px;
     margin: 15px auto;
@@ -110,9 +111,9 @@ width: 50%;
 
 .form-container .form .form-text-area{
     width: 80%;
-    background-color: var(--blanco);
+    background-color:#f2f8f8;
     color: var(--azul);
-    border: .5px solid var(--azul);
+    border: .3px solid var(--azul);
     border-radius: 6px;
     padding-left: 7px;
     margin: 15px auto;
@@ -127,15 +128,16 @@ width: 50%;
 
 .form-container .form button{
     width: 20%;
-    height:120px;
+    height:140px;
     text-align: center;
     background-color: var(--verde-oscuro);
     color: var(--blanco);
     margin: 40px auto 10px auto;
     border-radius: 6px;
     box-shadow: 8px 10px 10px 8px #cecece;
-    font-size: 28px;
+    font-size: 30px;
     cursor: pointer;
+    letter-spacing: 1.3px;
 }
 
 .form-container .form button:hover{
@@ -178,11 +180,11 @@ width: 50%;
         } */
 
         .form-container{
-            width: 92%;
+            width: 94%;
             display: flex;
             flex-direction: column;
             box-shadow: 2px 4px 6px 3px #cecece;
-            margin: 40px 0 15px 15px;
+            margin: 40px 0 15px 20px;
         }
         .form-container .form-card{
             height: 50%;
@@ -234,4 +236,11 @@ width: 50%;
             box-shadow: 2px 4px 6px 3px #cecece;
         }
 
+}
+
+@media screen and (max-width: 450px){
+ .form-container{
+    margin: 40px 0 15px 14px;
+    width: 93%;
+ }
 }

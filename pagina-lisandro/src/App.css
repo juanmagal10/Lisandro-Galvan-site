@@ -8,5 +8,7 @@
 
 .App {
   text-align: center;
-  background-color: var(--blanco);
+  background-color: #f6fdfd;
+  /* background-color: #f6fdfd; */
+  background-image: linear-gradient(#ffffff, #fdfdfd, #fafbfb,#f6fafa,  #f2f8f8);
 }
