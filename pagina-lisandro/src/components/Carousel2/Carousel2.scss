@@ -7,10 +7,12 @@
 }
 
 .carousel-container {
-  
-  
+ 
    .swiper-slide{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
 
@@ -42,33 +44,107 @@
    }
    .swiper-button-next:hover{
     color:var(--verde-claro);
-    
-
-    
+     
    }
    .swiper-pagination-bullet-active{
     background-color: var(--blanco);
     color: var(--blanco);
    }
-   .slider-text {
-      font-size: 20px;
-      color: #eee;
+
+   .swiper-slide-active {
       position: relative;
-      z-index: 5000;
-      top: 80%;
-      left: -100%;
-   }
-   .animation{
-      animation: aparecer .8s
-   };
-   @keyframes aparecer {
-      0%{
+
+    .slider-title{
+      font-size: 30px;
+         color: #eee;
+         position: relative;
+         z-index: 5000;
+         overflow: hidden;
+         top: -100%;
+         animation: aparecer-title .8s forwards .2s ease-out;
+         // top: 70%;
+         overflow: hidden;
+         display: inline;
+    }
+
+      .animation {
+         font-size: 20px;
+         color: #eee;
+         position: relative;
+         z-index: 5000;
+         overflow: hidden;
          left: -100%;
+         animation: aparecer .8s forwards .85s ease-out;
+         top: 70%;
+         overflow: hidden;
+         display: inline;
       }
-      100%{
-         left: 0;
+      .project-btn{
+         position: relative;
+         z-index: 5000;
+         height: 40px;
+         width: 100px;
+         background-color: #eee;
+         opacity: 0;
+         display: inline;
+         animation: aparecer-btn 1.5s forwards 1.5s ease-in;
+         top: 70%;
+         margin: 15px;
+         border-radius: 8px;
+         border: none;
+         cursor: pointer;
+         box-shadow: 0px 0px 3px 1px #444;
+         
       }
+      .project-btn a{
+         text-decoration: none;
+         color: #2b3752;
+         font-size: 16px;
+         font-weight: bold;
+      }
+      .project-btn:hover{
+         background-color: #86ee60;
+         border: .8px solid #eee;
+         color: var(--azul);
+         box-shadow: 0px 0px 1px 1px #e2e2e2; ;
+      }
+
+      @keyframes aparecer {
+         0% {
+            left: -100%;
+
+         }
+
+         100% {
+            left: 0;
+         }
+      }
+      @keyframes aparecer-btn {
+         0% {
+            opacity:0 ;
+
+         }
+
+         100% {
+            opacity: 1;
+         }
+      }
+      @keyframes aparecer-title {
+         0% {
+            top: -100%;
+
+         }
+
+         100% {
+            top: 70%;
+         }
+      }
+   
+
    }
+
+  
+  
 
 }
 
