@@ -1,13 +1,12 @@
 import React from 'react'
 import { createRef } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from '../header/Header';
-// import Carousel from '../Carousel/Carousel';
-import Description from '../Description/Description';
-import Projects from '../Projects/Projects';
-import Form from '../Form/Form';
-import Carousel2 from '../Carousel2/Carousel2';
-import Footer from '../Footer/Footer';
+import Header from '../../components/header/Header'
+import Description from '../../components/Description/Description';
+import Projects from '../../components/Projects/Projects';
+import Form from '../../components//Form/Form';
+import Carousel2 from '../../components/Carousel2/Carousel2';
+import Footer from '../../components/Footer/Footer';
 import './Home.css'
 
 const Home = () => {

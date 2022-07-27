@@ -21,7 +21,6 @@
     align-items: flex-end;
     padding: 2px;
     background-image: linear-gradient(#ffffff, #fdfdfd, #fafbfb, #f6fafa, #f2f8f8);;
-    /* background-color: transparent; */
     position: fixed;
     width: 100%;
     z-index: 10000;
@@ -36,8 +35,6 @@
     background-color: transparent;
     margin-left: 15px;
 }
-
-
 
 .logo{
     width: 120px;
@@ -111,6 +108,7 @@
     position: relative;
     color: var(--verde-oscuro);
     text-shadow: 2px 4px 6px #e3e3e3;
+    text-decoration: none;
 }
  .nav-container .nav ul li a {
      font-size: 19px;
@@ -143,15 +141,14 @@
 .aside-nav-container {
     display: inline;
     position: fixed;
-    left: 0;
+    left: -100%;
     top: 0;
     background-image: linear-gradient(to right, #FFFFFF, #FDFDFD, var(--blanco), #e2e2e2);
     z-index: 2000;
     list-style: none;
     width: 30%;
     height: fit-content;
-    animation-name: aparecerNav;
-    animation-duration: 1s;
+    animation: aparecerNav .8s forwards 0s ease-out;
     border-bottom-right-radius: 4px;
 }
 
@@ -198,20 +195,28 @@
         transform:scale(1.02);
     }
 }
+@keyframes aparecerNav{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
 
 /* media queris */
 @media screen and (max-width: 1300px){
         .header {
-                height: 180px;
+                height: 140px;
             }
         .titulo-container .titulo a {
-                font-size: 45px;
+                font-size: 40px;
         }
-        .titulo-container .titulo br{
+        /* .titulo-container .titulo br{
             display: inline;
-        }
+        } */
         .titulo-container .subtitulo a {
-            font-size: 26px;
+            font-size: 21px;
         }
     
         .nav-container .nav ul li {
@@ -219,14 +224,13 @@
         }
         .logo{
             /* margin:auto; */
-            width: 140px;
-            height: 140px;
-            margin-bottom: 10px;
+            width: 110px;
+            height: 110px;
         }
     
         
         }
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1105px) {
    .nav-container{
     display: none;
    }
@@ -261,8 +265,8 @@
         margin-left:auto;
     } */
     .logo{
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
     }
     .titulo-container .titulo  a{
         font-size: 40px;
@@ -293,7 +297,7 @@
     margin: auto;
 }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 550px){
     .header{
        height: 100px;
     }

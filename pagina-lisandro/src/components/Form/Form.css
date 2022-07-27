@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     height: 700px;
-    width: 85%;
+    width: 90%;
     margin: 80px auto 50px auto;
     border: 1px solid #222;
     box-shadow: 8px 10px 10px 8px #cecece;
@@ -160,13 +160,17 @@ width: 50%;
 }
 @media screen and (max-width: 1000px) {
     .form-container .form-card .form-card-img {
-            height: 250px;
-            width: 250px;
+            height: 240px;
+            width: 240px;
+            margin-left: 5px;
         }
         /* .form-card .icon-container :first-child {
             height: 50px;
             width: 50px;
         } */
+        .form-container .form {
+          margin-left: 25px;
+        }
     
         .form-container .form button {
             font-size: 23px;
@@ -182,14 +186,19 @@ width: 50%;
         } */
 
         .form-container{
-            width: 94%;
+            width: 85%;
             display: flex;
             flex-direction: column;
             box-shadow: 2px 4px 6px 3px #cecece;
-            margin: 40px 0 15px 20px;
+            margin: 40px 10px 15px 35px;
+            height: fit-content;
+            padding: 20px;
         }
         .form-container .form-card{
             height: 50%;
+        }
+        .form-container .form-card p{
+            margin-bottom: 0;
         }
         .form-container .form-card .form-card-img {
             height: 140px;
@@ -198,6 +207,8 @@ width: 50%;
         .form-card .icons-container{
             flex-wrap: nowrap;
             justify-content: space-around;
+            margin-top: 15px;
+            margin-bottom: 0;
         }
         .form-card .icons-container .icon-container{
             width: 30%;
@@ -210,39 +221,60 @@ width: 50%;
         }
 
         .form-container .form{
-            margin-top: 15px;
+            margin-top: 0px;
             height: 50%;
             flex-direction: row;
             flex-wrap: wrap;
+            
         }
         .form-container .form form-control{
-            width: 50%;
+            width: 100%;
             margin: 0;
         }
+        .form-container .form form-control .form-input:first-child{
+            margin-top: 0;
+        }
+ 
         .form-container .form form-control .form-input{
             width: 87%;
             height: 30px;
-            margin: 0;
+            margin-top: 10px;
       
         } 
 
         .form-container .form form-control .form-text-area{
             width: 87%;
-            margin: 0;
+            margin:10px 0;
         } 
 
         .form-container .form button{
             width: 50%;
             height: 40px;
-            margin: 0;
+            margin: 10px 0 0 0;
             box-shadow: 2px 4px 6px 3px #cecece;
         }
 
 }
+@media screen and (max-width:700px){
+    .form-container {
+            margin: 40px 15px 15px 25px;
+        }
+}
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 550px){
  .form-container{
-    margin: 40px 0 15px 14px;
-    width: 93%;
- }
+    margin: 40px 0px 15px 15px;
+    width: 85%;
+    padding-top: 5px;
+}
+.form-title{
+    margin-top: 5px;
+}
+.form-container .form form-control .form-input{
+    margin: 6px auto;
+}
+.form-card .icons-container {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
 }

@@ -1,5 +1,6 @@
 *{
  background-color: transparent;
+ text-align: center;
 }
 
 .container{
@@ -8,13 +9,13 @@
     background-image: linear-gradient(#ffffff, #fdfdfd, #fafbfb, #f6fafa, #f2f8f8);
 }
 
-  @media screen and (max-width:1300px) {
+  /* @media screen and (max-width:1300px) {
     .container{
         top: 180px;
     }
-  }
+  } */
 
-  @media screen and (max-width:450px) {
+  @media screen and (max-width:550px) {
     .container{
         top: 100px;
     }

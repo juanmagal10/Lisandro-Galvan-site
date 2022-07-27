@@ -1,14 +1,13 @@
 import React, { useState, useContext, useRef } from 'react';
 import { createRef } from 'react';
-import { DataContext } from '../../context/context';
+
 import logo from './logo-ambiente.png';
 import {FiMenu} from 'react-icons/fi'
 import './header.css'
 import Form from '../Form/Form';
-import Home from '../Home/Home';
 import Projects from '../Projects/Projects';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import { useGlobalContext } from '../../context/context';
+
 
 
 const Header = () => {
