@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRef } from 'react';
 
 import img1 from '../../assets/img/img1.jpg'
 import img2 from '../../assets/img/img2.jpg'
@@ -16,29 +17,30 @@ import './Carousel2.scss'
 
 
 
-import {EffectFade, Autoplay, Pagination, Navigation } from "swiper";
+
+import { EffectFade, Autoplay, Pagination, Navigation } from
+"swiper";
 
 
 
-
-
-const Carousel2 = () => {
+const Carousel2 = (header) => {
+  
+//   header=document.getElementById('header')
+//  const headerHeight= header.getBoundingClientRect().height
 
   return (
   <>
-      <Swiper
+      <Swiper 
+        // style={{top:`${headerHeight}px`}}
+        id='carousel' 
         centeredSlides={true}
         effect={"fade"}
         loop={true}
-        speed={1300}
+        speed={1200}
         autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
+        delay:4000,
+        disableOnInteraction: false,
         }}
-        
-        
-        
-        
      
         pagination={{
           clickable: true,
@@ -49,7 +51,7 @@ const Carousel2 = () => {
         className="carousel-container"
       >
         
-          <SwiperSlide className='slide'>
+        <SwiperSlide className='slide'>
           <img className='slide-content' src={img1} alt="img1" />
           <h3 className='slider-title'>titulo del projecto</h3>
           <p className='animation'>prueba de animacion para ver como sale 1</p>  

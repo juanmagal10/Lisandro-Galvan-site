@@ -1,14 +1,15 @@
 :root {
   --blanco: #f4f7ed;
-  --verde-claro: #86ee60;
+  --verde-claro: #74dd4f;
   --verde-oscuro: #2e6e65;
-  --azul: #2b3752;
-
+  --azul: #2f3f6d;
+ 
 }
+    /* --azul: #2b3752; */
 
 .App {
   text-align: center;
-  background-color: #f6fdfd;
   /* background-color: #f6fdfd; */
-  background-image: linear-gradient(#ffffff, #fdfdfd, #fafbfb,#f6fafa,  #f2f8f8);
+  /* background-color: #f6fdfd; */
+background-image: linear-gradient(#ffffff, #fdfdfd, #fafbfb, #f6fafa, #f2f8f8);
 }

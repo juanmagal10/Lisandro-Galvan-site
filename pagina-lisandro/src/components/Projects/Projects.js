@@ -7,7 +7,9 @@ import basuraElectronica from './imgs/img-basura-electronica.jpg';
 import './Projects.css'
 
 const Projects = () => {
-  return (
+    return (
+        <>
+        <h2 id='projects'  className='projects-title'>Proyectos...</h2>
       <div className='grid-container'>
           <div className='projects-container'>
               <div className="project-card">
@@ -33,6 +35,7 @@ const Projects = () => {
               </div> 
               </div>
       </div>
+      </>
   )
 }
 

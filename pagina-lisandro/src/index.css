@@ -1,5 +1,10 @@
+html{
+  scroll-behavior: smooth;
+ 
+  
+}
 h1, h2, h3, h4, h5{
-  font-family: 'PT Serif Caption', serif;
+  font-family: 'Merriweather Sans', serif;
   line-height: 50px;
 }
 body {

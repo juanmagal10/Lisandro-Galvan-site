@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
 
 
 
@@ -55,29 +56,30 @@
       position: relative;
 
     .slider-title{
-      font-size: 30px;
+      font-size: 33px;
          color: #eee;
          position: relative;
          z-index: 5000;
          overflow: hidden;
          top: -100%;
-         animation: aparecer-title .8s forwards .2s ease-out;
-         // top: 70%;
+         animation: aparecer-title .7s forwards .15s ease-out;
          overflow: hidden;
          display: inline;
+         margin-bottom: 5px;
     }
 
       .animation {
-         font-size: 20px;
+         font-size: 22px;
          color: #eee;
          position: relative;
          z-index: 5000;
          overflow: hidden;
          left: -100%;
-         animation: aparecer .8s forwards .85s ease-out;
+         animation: aparecer .7s forwards .75s linear;
          top: 70%;
          overflow: hidden;
          display: inline;
+         margin-top: 10px;
       }
       .project-btn{
          position: relative;
@@ -87,7 +89,7 @@
          background-color: #eee;
          opacity: 0;
          display: inline;
-         animation: aparecer-btn 1.5s forwards 1.5s ease-in;
+         animation: aparecer-btn 1.4s forwards 1.4s ease-in;
          top: 70%;
          margin: 15px;
          border-radius: 8px;
@@ -111,12 +113,14 @@
 
       @keyframes aparecer {
          0% {
-            left: -100%;
+            left: -10%;
+            opacity: 0;
 
          }
 
          100% {
             left: 0;
+            opacity: 1;
          }
       }
       @keyframes aparecer-btn {
@@ -126,22 +130,44 @@
          }
 
          100% {
-            opacity: 1;
+            opacity: .8;
          }
       }
       @keyframes aparecer-title {
          0% {
-            top: -100%;
+            top: 55%;
+            opacity: 0.5;
 
          }
 
          100% {
             top: 70%;
+             opacity: 1;
          }
       }
-   
+      @media screen and (max-width: 450px){
+      .project-btn{
+            top:60%;
+         }
+       .animation{
+         top: 55%;
+       }
+      @keyframes aparecer-title {
+         0% {
+            top: 35%;
+
+         }
+
+         100% {
+            top: 50%;
+         }
+      }
+      }
+
 
    }
+
+ 
 
   
   

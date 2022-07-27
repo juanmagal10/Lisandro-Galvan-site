@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-margin-top: 150px;
 }
 
 :root{
@@ -10,16 +11,25 @@
     --azul:#2b3752;
 
 }
-
+/* .header-container{
+    position: relative;
+    width: 100vw;
+} */
 .header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 2px;
-    /* background-image: linear-gradient(#ffffff, #fbfbfb, #efefef,#dcdcdc); */
-    background-color: transparent;
-    height: fit-content;
-    position: relative;
+    background-image: linear-gradient(#ffffff, #fdfdfd, #fafbfb, #f6fafa, #f2f8f8);;
+    /* background-color: transparent; */
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    height: 140px;
+
+}
+.header-scrolling{
+    box-shadow: 2px 2px 3px 4px #222;
 }
 
 .logo-container{
@@ -39,23 +49,25 @@
     margin-left: 20%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
-.titulo-container .titulo{
+.titulo-container .titulo a{
     font-size: 55px;
     font-weight: bold;
     color:var(--verde-oscuro);
     text-shadow: 2px 4px 6px #cecece;
+    text-decoration: none;
 }
 .titulo-container .titulo br{
     display: none;
 }
-.titulo-container .subtitulo{
+.titulo-container .subtitulo a{
     font-size: 26px;
     font-weight: bold;
     color: var(--azul);
     text-shadow: 2px 4px 6px #dedede;
+    text-decoration: none;
 }
 
 .titulo-container:hover{
@@ -64,6 +76,7 @@
     animation-fill-mode: forwards;
     cursor: pointer;
 }
+
 
 /* nav */
 .nav-container{
@@ -76,8 +89,9 @@
 .nav-container nav{
     height: 100%;
     display: flex;
-    align-items:center;
+    align-items:flex-end;
     width: 100%;
+    margin-bottom: 15px;
    
 }
 
@@ -98,11 +112,19 @@
     color: var(--verde-oscuro);
     text-shadow: 2px 4px 6px #e3e3e3;
 }
+ .nav-container .nav ul li a {
+     font-size: 19px;
+     text-decoration: none;
+     cursor: pointer;
+ }
+  .nav-container .nav ul li a:visited{
+    color: var(--verde-oscuro); ;
+  }
 .nav-container .nav ul li:hover{
     color: var(--azul);
     animation: scaler .5s;
     animation-fill-mode: forwards;
-    cursor: pointer;
+    
 }
 
 .menu-logo-container{
@@ -140,11 +162,17 @@
 
 .aside-nav-container .aside-nav ul li{
     list-style: none;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight:600;
     margin: 30px 10px 30px 0;
     cursor: pointer;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+    color: var(--verde-oscuro);
+}
+.aside-nav-container .aside-nav ul li a{
+    text-decoration: none;
+}
+.aside-nav-container .aside-nav ul li a:visited{
     color: var(--verde-oscuro);
 }
 
@@ -172,57 +200,84 @@
 }
 
 /* media queris */
-@media screen and (max-width: 1440px){
-    .titulo-container {
-            margin-left: auto;
+@media screen and (max-width: 1300px){
+        .header {
+                height: 180px;
+            }
+        .titulo-container .titulo a {
+                font-size: 45px;
         }
-}
-@media screen and (max-width: 1100px) {
-    .titulo-container .titulo {
-        font-size: 40px;
-    }
-    .titulo-container .titulo br {
-        display: inline;
-    }
-    .titulo-container .subtitulo{
-        font-size: 22px;
-    }
-    .nav-container .nav ul li{
-        font-size: 18px;
-    }
-}
+        .titulo-container .titulo br{
+            display: inline;
+        }
+        .titulo-container .subtitulo a {
+            font-size: 26px;
+        }
+    
+        .nav-container .nav ul li {
+            font-size: 22px;
+        }
+        .logo{
+            /* margin:auto; */
+            width: 140px;
+            height: 140px;
+            margin-bottom: 10px;
+        }
+    
+        
+        }
+@media screen and (max-width: 1090px) {
+   .nav-container{
+    display: none;
+   }
 
-@media screen and (max-width: 900px){
-    .titulo-container{
-        margin:auto;
-    }
-    .titulo-container .titulo {
-        font-size: 40px;
-    }
-    .titulo-container .subtitulo {
-        font-size: 22px;
-    }
-    .nav-container{
-        display: none;
-    }
+   .titulo-container{
+    margin-left: 20%;
+   }
     .menu-logo-container {
         display: inline;
         background-color: var(--blanco);
         border-radius: 50%;
         color: var(--verde-oscuro);
-        height: 50px;
-        width: 50px;
+        height: 55px;
+        width: 55px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin:auto;
-        box-shadow: .5px 2px 2px 2px rgba(50,50, 50, .5);
+        margin: auto;
+        box-shadow: .5px 2px 2px 2px rgba(50, 50, 50, .5);
         cursor: pointer;
     }
+}
+@media screen and (max-width: 1000px) {
+
+   .titulo-container{
+    margin-left: auto;
+   }  
+}
+
+@media screen and (max-width: 900px){
+    /* .titulo-container{
+        margin-left:auto;
+    } */
+    .logo{
+        width: 130px;
+        height: 130px;
+    }
+    .titulo-container .titulo  a{
+        font-size: 40px;
+    }
+    .titulo-container .subtitulo a{
+        font-size: 22px;
+    }
+    .nav-container{
+        display: none;
+    }
+
     
     .menu-logo-container:hover {
         color: var(--verde-claro);
-        animation-name: scaleA;
+        animation-name: scaler;
         animation-duration: .3s;
         animation-fill-mode: forwards;
     }
@@ -233,35 +288,55 @@
     
     }
 }
+@media screen and(max-width:70px){
+.titulo-container{
+    margin: auto;
+}
+}
 @media screen and (max-width: 450px){
     .header{
-        padding-right: 6px;
+       height: 100px;
+    }
+    .logo-container {
+        margin: auto 5px auto 7px;
     }
     .logo{
-        width: 74px;
-        height:74px;
+        width: 71px;
+        height:71px;
+        margin: 0;
     }
-        .titulo-container{
-            margin:5px 0 5px auto;
-            
-        }
-        .titulo-container .titulo {
-        font-size: 25px;
-        line-height: 34px;
+    .titulo-container{
+        margin: auto;
     }
-    .titulo-container .subtitulo {
+    .titulo-container br{
+       display: none;
+    }
+    .titulo-container .titulo{
+        line-height: 32px;
+    }
+    .titulo-container .subtitulo{
         font-size: 13px;
-        line-height: 25px;
+        line-height: 32px;
+    }
+
+    .titulo-container .titulo a{
+    font-size: 25px;
+    line-height: 18px;
+   
+}
+  
+    .titulo-container .subtitulo a{
+        font-size: 13px;
+        line-height: 18px;
+        
     }
     .menu-logo-container{
-        height: 45px;
-        width: 45px;
-
+        height: 35px;
+        width: 35px;
     }
     .aside-nav-container .aside-nav ul li{
         font-size: 18px;
+        
     }
-    .logo-container{
-    margin-left: 7px;
-}
+
 }

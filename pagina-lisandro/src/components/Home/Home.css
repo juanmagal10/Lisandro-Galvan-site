@@ -1,0 +1,22 @@
+*{
+ background-color: transparent;
+}
+
+.container{
+    position: relative;
+    top:150px;
+    background-image: linear-gradient(#ffffff, #fdfdfd, #fafbfb, #f6fafa, #f2f8f8);
+}
+
+  @media screen and (max-width:1300px) {
+    .container{
+        top: 180px;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    .container{
+        top: 100px;
+    }
+    
+  }

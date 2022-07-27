@@ -1,23 +1,13 @@
 
 import './App.css';
-import Header from './components/header/Header';
-import Carousel from './components/Carousel/Carousel';
-import Description from './components/Description/Description';
-import Projects from './components/Projects/Projects';
-import Form from './components/Form/Form';
-import Footer from './components/Footer/Footer';
-import Carousel2 from './components/Carousel2/Carousel2';
+import Home from './components/Home/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Carousel2 />
-      <Description />
-      <Projects />
-      <Form />
-      <Footer/>
+     <Home></Home>
     </div>
   );
 }
