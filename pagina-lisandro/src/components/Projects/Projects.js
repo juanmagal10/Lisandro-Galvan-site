@@ -3,6 +3,7 @@ import refugio from './imgs/img-refugio.jpg';
 import reciclaje from './imgs/img-reciclaje.jpg';
 import vivero from './imgs/img-vivero.jpg';
 import basuraElectronica from './imgs/img-basura-electronica.jpg';
+import { Link } from 'react-router-dom';
 
 import './Projects.css'
 
@@ -12,12 +13,15 @@ const Projects = () => {
         <h2 id='projects'  className='projects-title'>Proyectos...</h2>
       <div className='grid-container'>
           <div className='projects-container'>
-              <div className="project-card">
+                    <Link to='project1'>
+
+                    <div className="project-card">
                   <h3 className='project-title' id='project-title'>Titulo</h3>
                   
                   <img className='project-img' src={refugio} alt="refugio" />
                   <p className='project-description'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi enim at autem, beatae doloremque necessitatibus delectus eos voluptate sapiente voluptatibus repellat quas possimus similique quis magni incidunt et sed modi?</p>
               </div>
+                    </Link>
               <div className="project-card">
                   <h3 className='project-title' id='project-title2'>Titulo</h3>
                   <img className='project-img' src={reciclaje} alt="reciclaje" />

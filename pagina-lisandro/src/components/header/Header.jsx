@@ -35,10 +35,10 @@ const Header = () => {
               
           <header ref={headerRef} id='header' className={headerScroll?'header-scrolling header':'header'} onScroll={()=>handleScroll()}>
               <div className="logo-container">
-                  <a href="#inicio"><img src={logo} alt="logo" className='logo' /></a>
+                  <Link to="/#inicio"><img src={logo} alt="logo" className='logo' /></Link>
               </div>
               <div className="titulo-container">
-                  <h1 className="titulo"><a href="#inicio">Lisandro <br/> Galván</a></h1>
+                  <h1 className="titulo"><a href="/#inicio">Lisandro <br/> Galván</a></h1>
                   <h3 className='subtitulo'><a href="#inicio">Consultor Ambiental</a></h3>
               </div>
               <div className="nav-container">

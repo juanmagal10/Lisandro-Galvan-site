@@ -1,0 +1,16 @@
+.project-page{
+    position: relative;
+    top: 140px
+}
+.project-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+.project-title {
+    margin:15px;
+}
+.project-description{
+    margin: 20px;
+}
