@@ -2,10 +2,10 @@ import React from 'react'
 import Header from '../../components/header/Header'
 import Footer from '../../components/Footer/Footer'
 import './ProjectPage.css'
-import projectImg from '../../components/Projects/imgs/img-reciclaje.jpg'
+// import projectImg from '../../components/Projects/imgs/img-reciclaje.jpg'
 
 
-const ProjectPage = ({projectName}) => {
+const ProjectPage = ({projectName, projectImg}) => {
     return (
         <>
         <Header/>
