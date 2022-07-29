@@ -7,6 +7,7 @@ import './header.css'
 import Form from '../Form/Form';
 import Projects from '../Projects/Projects';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 
 
@@ -35,7 +36,7 @@ const Header = () => {
               
           <header ref={headerRef} id='header' className={headerScroll?'header-scrolling header':'header'} onScroll={()=>handleScroll()}>
               <div className="logo-container">
-                  <Link to="/#inicio"><img src={logo} alt="logo" className='logo' /></Link>
+                  <HashLink to="/#inicio"><img src={logo} alt="logo" className='logo' /></HashLink>
               </div>
               <div className="titulo-container">
                   <h1 className="titulo"><a href="/#inicio">Lisandro <br/> Galván</a></h1>
@@ -44,10 +45,10 @@ const Header = () => {
               <div className="nav-container">
                   <nav className="nav">
                       <ul>
-                          <li><a href="#inicio">Inicio</a></li>
-                          <li><a href="#contact">Contacto</a></li>
-                          <li><a href='#projects'>Proyectos</a></li>
-                          <li><a href="#about">Sobre Mi</a></li>
+                          <NavHashLink to='/#inicio' style={{textDecoration:'none'}}><li>Inicio</li></NavHashLink>
+                              <NavHashLink to='/#contact' style={{ textDecoration: 'none' }}><li>Contacto</li></NavHashLink>
+                          <NavHashLink to='/#projects' style={{ textDecoration: 'none' }}><li>Proyectos</li></NavHashLink>
+                          <NavHashLink to='/#about' style={{ textDecoration: 'none' }}><li>Sobre Mi</li></NavHashLink>
                       </ul>
                       </nav>
                       {/* <Routes>

@@ -110,13 +110,13 @@
     text-shadow: 2px 4px 6px #e3e3e3;
     text-decoration: none;
 }
- .nav-container .nav ul li a {
+ /* .nav-container .nav ul li {
      font-size: 19px;
      text-decoration: none;
      cursor: pointer;
- }
-  .nav-container .nav ul li a:visited{
-    color: var(--verde-oscuro); ;
+ } */
+  .nav-container .nav ul li:visited{
+    color: var(--verde-oscuro);
   }
 .nav-container .nav ul li:hover{
     color: var(--azul);
