@@ -18,11 +18,18 @@ const Header = () => {
     const handleNav = () => {
         setAssideNave(!assideNav)
     }
-    const handleScroll = () => {
-        setHeaderScroll(true)
-    }
+
     // const headerHeight = headerRef.current.getBoundingClientRect()
     // console.log(headerHeight.height)
+    const addShadow = () => {
+        if (window.scrollY === 0) {
+            setHeaderScroll(false)
+        } else {
+            setHeaderScroll(true)
+        }
+    }
+    
+    window.addEventListener('scroll', addShadow)
     
     
     
@@ -31,10 +38,10 @@ const Header = () => {
   return (
       <>
           <div id="inicio"></div>
-          <div id='header-container' className='header-container'>
+          <div id='header-container' className={'header-container'}>
               <div className={assideNav ? "modal" : "modal-hiden"} onClick={() => handleNav()}></div>
               
-          <header ref={headerRef} id='header' className={headerScroll?'header-scrolling header':'header'} onScroll={()=>handleScroll()}>
+          <header ref={headerRef} id='header' className={headerScroll?'header-scrolling header':'header'}>
               <div className="logo-container">
                   <HashLink to="/#inicio"><img src={logo} alt="logo" className='logo' /></HashLink>
               </div>
@@ -61,13 +68,13 @@ const Header = () => {
               <div className={assideNav ? 'aside-nav-container' : 'aside-nav-hiden'}>
                 <nav className='aside-nav'>
                    <ul>
-                          <li onClick={() => handleNav()}><a href="#inicio">Inicio</a></li>
+                          <HashLink to='/#inicio' style={{textDecoration:'none'}}><li onClick={() => handleNav()}>Inicio</li></HashLink>
                           
-                          <li onClick={() => handleNav()}><a href="#contact">Contacto</a></li>
+                          <HashLink to='/#contact' style={{textDecoration:'none'}}><li onClick={() => handleNav()}>Contacto</li></HashLink>
                           
-                          <li onClick={() => handleNav()}><a href="#projects">Proyectos</a></li>
+                          <HashLink to='/#projects' style={{textDecoration:'none'}}><li onClick={() => handleNav()}>Proyectos</li></HashLink>
                           
-                          <li onClick={()=>handleNav()}><a href="#about">Sobre Mi</a></li>
+                          <HashLink to='/#about' style={{textDecoration:'none'}}><li onClick={()=>handleNav()}>Sobre Mi</li></HashLink>
                       </ul>
                 </nav>
               </div>
